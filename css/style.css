@@ -1,0 +1,68 @@
+body {
+	font-family: 'Poppins';
+	font-size: 22px;
+	margin-top: 82px;
+}
+
+.navbar {
+	box-shadow: 3px 3px 5px #3292a6;
+	opacity: 0.8;
+}
+
+.showcase-image {
+	background: url("../img/showcase-bg.jpg");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	position: relative;
+}
+
+.showcase-image-overlay {
+	background: rgba(50, 146, 166, 0.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.white-overlay {
+	background: rgba(50, 146, 166, 0.8);
+}
+
+#vr-section {
+	background: url("../img/vr-back.jpg");
+	background-attachment: fixed;
+}
+#vr-section p,
+#mobile-section p,
+#web-section p {
+	font-size: 29px;
+}
+
+#web-section {
+	background: url("../img/web-bg.jpg");
+	background-attachment: fixed;
+}
+
+.btn {
+	background-color: #3292a6;
+}
+
+ul {
+	list-style-type: none;
+}
+
+footer {
+	background-color: #3292a6;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+@media (max-width: 678px) {
+	h3 {
+		font-size: 45px !important;
+	}
+	.text-edit {
+		text-align: center !important;
+	}
+}
