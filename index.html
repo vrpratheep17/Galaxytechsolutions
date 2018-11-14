@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
@@ -16,7 +17,7 @@
 <!-- Navbar section -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="index.html">
-        <img src="./img/galazy_logo.jpg" alt="" width="100px" class="rounded-circle">
+        <img src="./img/galazy_logo.jpg" alt="" width="50px" class="rounded-circle">
         <p class="d-inline font-weight-bold">Galaxy Tech Solutions</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -155,14 +156,14 @@
         <h3 class="display-3 pl-2">Contact us</h3>
         <div class="row">
             <div class="col-lg-9">
-                <form action="">
+            <form action="index.html" >
                     <div class="col-auto">
                         <label class="sr-only" for="inlineFormInputGroup">name</label>
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-user"></i></div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name">
+                            <input type="text" name="name" class="form-control" id="inlineFormInputGroup" placeholder="Name">
                         </div>
                     </div>
                     <div class="col-auto">
@@ -171,7 +172,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+                            <input type="text" name="_replyto" class="form-control" id="inlineFormInputGroup" placeholder="Email">
                         </div>
                     </div>
                     <div class="col-auto">
@@ -185,7 +186,7 @@
                         </div>
                     </div>
                     <div class="col-auto" >
-                        <button  class="btn btn-block">Submit</button>
+                    <input type="submit" class="btn btn-block" value="Send">
                     </div>
                 </form>
 
@@ -244,6 +245,9 @@
     </div>
 </footer>
 
+
+
+
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -288,15 +292,21 @@
 
         });
 
+        
+
         window.sr=ScrollReveal()
+        sr.reveal('.showcase-left', { mobile: false });
         sr.reveal(".navbar",{
             duration:3000,
-            origin:"bottom"
+            origin:"bottom",
+          
+            
         })
         sr.reveal(".showcase-right",{
             duration:2000,
             origin:"top",
-            distance:"300px"
+            distance:"300px",
+    
         })
          sr.reveal(".showcase-left", {
                 duration: 3000,
