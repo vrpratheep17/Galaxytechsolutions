@@ -2,6 +2,7 @@ body {
 	font-family: 'KoHo', sans-serif;
 	font-size: 22px;
 	margin-top: 63px;
+	
 }
 
 .navbar {
@@ -59,6 +60,10 @@ footer {
 }
 
 @media (max-width: 678px) {
+	#showcase-section h4 {
+		font-size: 30px !important;
+		
+	}
 	h3 {
 		font-size: 45px !important;
 	}
@@ -67,5 +72,11 @@ footer {
 	}
 	p {
 		text-align: center;
+	}
+	h3 {
+		text-align: center;
+	}
+	h4 {
+		font-size: 45px !important;
 	}
 }
